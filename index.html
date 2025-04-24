@@ -3,13 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <h1>HTML Crash Course</h1>
-    <p>Welcome to the HTML Crash Course!</p>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#home">Home</a> | <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <img src="https://via.placeholder.com/150" alt="Profile picture" />
+      <h2>About Me</h2>
+      <p>Hi, I’m learning HTML and building my first webpage!</p>
+      <h3>My Skills</h3>
+      <ol>
+        <li>HTML</li>
+        <li>Problem Solving</li>
+        <li>Creativity</li>
+      </ol>
+      <h3>Contact Me</h3>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
     <footer>
-      <p>© 2025 DevPath. All rights reserved.</p>
+      <p>© 2025 My Portfolio</p>
     </footer>
   </body>
 </html>

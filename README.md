@@ -174,9 +174,68 @@ Example:
 
 - **Use Semantic Tags**: Improve accessibility and SEO.
 - **Validate Your HTML**: Use tools like [W3C Validator](https://validator.w3.org/).
-- **Keep Code Clean**: Indent properly and comment complex sections.
 - **Test Responsiveness**: Ensure your page works on mobile and desktop.
 - **Optimize Images**: Use compressed images for faster loading.
+- **Keep Code Clean**: Indent properly and comment complex sections.
+
+```html
+<!-- This is a comment -->
+```
+
+## Practice Project: Build a Simple Webpage
+
+Create a personal portfolio page. Save as portfolio.html and open in your browser.
+Instructions:
+
+1. Create a heading: “My Portfolio”.
+2. Add a navigation menu with links to “Home”, “About”, and “Contact”.
+3. Include an image (use a placeholder like https://via.placeholder.com/150).
+4. Write a paragraph about yourself.
+5. Add an ordered list of your skills.
+6. Create a contact form with fields for name, email, and a submit button.
+7. Use semantic tags like <header>, <main>, and <footer>.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#home">Home</a> | <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <img src="https://via.placeholder.com/150" alt="Profile picture" />
+      <h2>About Me</h2>
+      <p>Hi, I’m learning HTML and building my first webpage!</p>
+      <h3>My Skills</h3>
+      <ol>
+        <li>HTML</li>
+        <li>Problem Solving</li>
+        <li>Creativity</li>
+      </ol>
+      <h3>Contact Me</h3>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p>© 2025 My Portfolio</p>
+    </footer>
+  </body>
+</html>
+```
 
 ## What's Next?
 
@@ -204,6 +263,7 @@ git clone https://github.com/TheDevPath/HTML-Crash-Course.git
 
 - Open the project folder in your code editor.
 - Open `index.html` in your browser to view the example page.
+- Challenge yourself to modify the HTML and add new elements. Try adding the about and contact sections, and link the navigation or create a new page for your portfolio.
 
 ### Project Structure
 
