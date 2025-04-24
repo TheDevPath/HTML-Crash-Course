@@ -199,7 +199,7 @@ This repository contains a sample project to practice the concepts covered in th
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/TheDevPath/HTML-Crash-Course.git
 ```
 
 - Open the project folder in your code editor.
