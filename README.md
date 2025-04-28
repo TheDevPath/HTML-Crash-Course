@@ -83,7 +83,25 @@ HTML uses tags to define elements. Here are the most common:
 #### Links: `<a>` with `href` attribute for navigation.
 
 ```html
-<a href="https://example.com">Visit Example</a>
+<!-- Link to another page -->
+<a href="about.html">About Us</a>
+
+<!-- Open external links in a new tab with the target attribute -->
+<a href="https://example.com" target="_blank">Visit Example</a>
+
+<!-- Link to an email address -->
+<a href="mailto:info@example.com">Email Us</a>
+
+<!-- Link to a phone number -->
+<a href="tel:+1234567890">Call Us</a>
+
+<!-- Link to a section within the same page -->
+<a href="#section">Jump to Section</a>
+<!-- Remember the section you want to link to will need a matching ID attribute -->
+<section id="section">
+  <h2>Section Title</h2>
+  <p>Content of the section.</p>
+</section>
 ```
 
 #### Images: `<img />` with `src` and `alt` attributes.
@@ -213,7 +231,7 @@ Instructions:
     </header>
     <main>
       <img src="https://via.placeholder.com/150" alt="Profile picture" />
-      <h2>About Me</h2>
+      <h2 id="about">About Me</h2>
       <p>Hi, I’m learning HTML and building my first webpage!</p>
       <h3>My Skills</h3>
       <ol>
@@ -221,7 +239,7 @@ Instructions:
         <li>Problem Solving</li>
         <li>Creativity</li>
       </ol>
-      <h3>Contact Me</h3>
+      <h3 id="contact">Contact Me</h3>
       <form action="/submit" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
